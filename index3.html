@@ -1,0 +1,137 @@
+<!--#include virtual="/common/header.html"-->
+
+	    <!-- panel -->
+	    <div class="panel_main">
+		<div id="content_page" data-role="content" class="ui-content homepage">
+       <!-- <h1 class="index-head">Welcome!</h1>-->
+        
+       <div class="index-btn-area" onClick="window.location='/send-money/send-money-1.html'"> 
+       <div class="index-btn">
+       
+       <img class="ep-icon" alt="Western Union" id="" />
+       
+       <span class="index-btn-text" >Start a transfer</span>
+       
+       </div>
+       
+        </div>
+        
+		   <img class="index-bg" alt="Western Union" id="" />
+           
+           <img class="index-bg-1" alt="Western Union" id="" />
+           
+           <div class="index-login" onClick="window.location='/login/login.html'">
+           
+		   <img class="login-icon" alt="Western Union" id="" />
+           
+            <input  type="submit" data-theme="a" value="Sign in" />
+            </div>
+            
+            <div class="agent-track-area" onClick="window.location='/agent/agent-map-searchlist.html'">
+            
+            <div class="agent-area">
+            <img class="agent-icon" alt="Western Union" id="" />
+            <span class="agent-area-text">
+            Find a <br/>location
+            </span>
+            
+            </div>
+            
+            <div class="track-area" onClick="window.location='/track-transfer/tx-person.html'">
+            <img class="tat-icon" alt="Western Union" id="" />
+            <span class="track-area-text">
+            Track a <br/>transfer
+            </span>
+            </div>
+            
+            </div>
+            
+            
+            
+               
+            
+            
+            
+            
+		</div>
+
+		
+<!--#include virtual="/common/footer.html"-->
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+$('span.btn-back').css({
+	    	visibility: 'hidden'
+			});
+			
+			$(document).keyup( function(e) { 
+			
+			if(e.keyCode === 27){
+		
+            alert("Press key 2 to see image variation--------Press key 1 for UK - EU Cookie variation and click manage cookies to proceed with the cookie settings page------- Press 0 to come back to the prototype initiated design");
+        }
+	
+if(e.keyCode === 48){
+	location.reload();
+}
+
+if(e.keyCode === 50){
+	
+	$('.index-bg').slideUp();
+	$('.index-bg-1').slideDown();
+	
+}
+	
+	if(e.keyCode === 49){
+			
+			$('#errors').css({
+	    	display: 'block',
+			top: '0',
+			background: '#f6d20d'
+			});
+				
+			$('#errors .text').css({
+	    	color: '#564500',
+			lineHeight:'1.6em',
+			width:'300px',
+			top:'15px',
+			position:'absolute'
+			});
+			$('#errors .close').css({
+	    	display: 'none'
+			});
+			$('#errors .close_yellow').css({
+	    	display: 'block'
+			});
+			
+			
+			
+			$('#errors .btn_left_yellow').css({
+	    	display:'none'
+			});
+			
+			$('#errors .btn_right_yellow').css({
+	    	display:'none'
+			});
+			
+			$('#errors .error-code').css({
+	    	display: 'none'
+			});
+			$('#errors .btn_left_red').css({
+	    	display: 'none'
+			});
+			$('#errors .btn_right_red').css({
+	    	display: 'none'
+			});
+  
+  
+   }
+		
+		});
+
+	});
+</script>
+	
+	
